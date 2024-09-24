@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Greet from './components/Greet';
+import EmployeeList from './components/Employee/EmployeeList';
+import TodoList from './components/TodoList';
+import { employeeData } from './components/Employee/EmployeeData';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container-fluid'>
+      {/* <Greet age={22} name='Santosh' />
+      <TodoList /> */}
+      <EmployeeList employees={employeeData} />
     </div>
-  );
+  )
 }
+
+
 
 export default App;
