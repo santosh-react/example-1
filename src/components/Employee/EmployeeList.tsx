@@ -27,7 +27,7 @@ const EmployeeList: React.FC<EmployeeListProps> = ({ employees }) => {
   return (
     <div>
       <div className="row mt-4">
-        <div className="col-sm-7">
+        <div className="col-sm-12">
 
           <div className="card shadow">
             <div className="card-header text-white bg-info">
